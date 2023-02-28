@@ -1,0 +1,12 @@
+version: "3.8"
+
+services:
+  ubuntu:
+    build:
+      context: ./
+      args:
+        - TZ=${TZ}
+        - LANG=${LANG}
+        - USER_NAME=${USER_NAME}
+        - PYTHON_VERSION=${PYTHON_VERSION}
+    tty: true
